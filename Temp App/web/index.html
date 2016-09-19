@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Temperature Conversion</title>
+        <style>
+            #main{
+                margin: 0 auto;
+                width:400px;
+                height: 250px;
+                background: lightblue;
+                border: 2px solid #99ccff;
+                
+            }
+            #form{
+                 padding-left: 100px;
+            }
+            button{
+                width:173px;
+                height: 30px;
+                background: #ffcc66;
+                border: 2px #ff9900 solid;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="main">
+        <h1>Temperature Conversion</h1>
+        <form action='convert.jsp' method = 'post'>
+            <div id ="form"><input type="text" name ="temp" id ="temp"/>
+            <p><button type="submit">Convert</button></p>
+            </div>
+        </form>
+        
+        </div>
+    </body>
+</html>
