@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<portfolio>
+<portfolios>
     <fund>
         <name>Small Cap Fund</name>
         <shares>100</shares>
@@ -18,4 +18,4 @@
         <purchase-price>24.50</purchase-price>
         <current-price>27.41</current-price>
     </fund>
-</portfolio>
+</portfolios>
