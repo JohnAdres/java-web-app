@@ -9,7 +9,7 @@ public class StatBean {
 
      private double[] numbers;
 
-
+//------------------------------------------------------------------------------
      public double getAverage() {
           double sum = 0;
           for (int i = 0; i < numbers.length; i++) {
@@ -17,6 +17,7 @@ public class StatBean {
           }
           return sum / numbers.length;
      }
+//------------------------------------------------------------------------------
 
      public double[] getNumbers() {
           return numbers;
@@ -35,8 +36,8 @@ public class StatBean {
      }
 
      public int getNumbersSize() {
-        
+
           return numbers.length;
      }
-     
+
 }
