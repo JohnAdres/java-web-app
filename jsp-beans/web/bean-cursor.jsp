@@ -5,9 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="planets" class="com.beans.BeanCursor"/>
 <html>
-    <body bgcolor="white">
-        <jsp:useBean id="planets" class="com.beans.BeanCursor"/>
+    <body>     
         <table border="1">
             <tr>
                 <th>Planet</th> <th>Number of Moons</th>
