@@ -24,6 +24,14 @@
         <servlet-name>StatusCodeServlet</servlet-name>
         <servlet-class>com.servlet.StatusCodeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetLastModifiedInfo</servlet-name>
+        <servlet-class>com.servlet.GetLastModified</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowSession</servlet-name>
+        <servlet-class>com.servlet.ShowSession</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/FirstServlet</url-pattern>
@@ -47,6 +55,14 @@
     <servlet-mapping>
         <servlet-name>StatusCodeServlet</servlet-name>
         <url-pattern>/StatusCodeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetLastModifiedInfo</servlet-name>
+        <url-pattern>/GetLastModified</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowSession</servlet-name>
+        <url-pattern>/ShowSession</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
