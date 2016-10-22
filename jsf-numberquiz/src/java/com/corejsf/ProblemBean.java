@@ -17,8 +17,7 @@ public class ProblemBean implements Serializable{
      public ProblemBean(int values [], int solution){
           sequence = new ArrayList<Integer>();
           for (int i = 0; i < values.length; i++) {
-               int value = values[i];
-               sequence.add(value);
+               sequence.add(values[i]);
           }
           this.solution = solution;
      }
