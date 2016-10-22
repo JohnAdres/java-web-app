@@ -10,7 +10,7 @@
         <h:form>
             <p>#{quizBean.question}</p>
             <p><h:inputText value="#{quizBean.response}"/></p>
-            <p><h:commandButton value="#{msgs.checkAnswer}" action="#{quizBean.AnswerAction}"/></p>
+            <p><h:commandButton value="#{msgs.checkAnswer}" actionListener="#{quizBean.AnswerAction}"/></p>
         </h:form>
     </h:body>
 </html>

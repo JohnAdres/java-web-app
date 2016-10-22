@@ -3,6 +3,7 @@ package com.corejsf;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 
@@ -82,6 +83,15 @@ public class QuizBean implements Serializable {
                }
           }
      }//AnswerAction()
+     
+     public String startOverAction(){
+          Collections.shuffle(problems);
+          currentProblem = 0;
+          score = 0;
+          tries = 0;
+          response="";
+          return "startOver";
+     }
      //-------------------------------------------------------------------------
      private void nextProblem(){
           correctAnswer = problems.get(currentProblem).getAnswer();
