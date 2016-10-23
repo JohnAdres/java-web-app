@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<portfolios>
+    <fund>
+        <name>Small Cap Fund</name>
+        <shares>100</shares>
+        <purchase-price>21.25</purchase-price>
+        <current-price>23.54</current-price>
+    </fund>
+    <fund>
+        <name>Asia Fund</name>
+        <shares>250</shares>
+        <purchase-price>13.15</purchase-price>
+        <current-price>18.74</current-price>
+    </fund>
+    <fund>
+        <name>Income Fund</name>
+        <shares>500</shares>
+        <purchase-price>24.50</purchase-price>
+        <current-price>27.41</current-price>
+    </fund>
+</portfolios>
