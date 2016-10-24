@@ -6,8 +6,8 @@ import javax.faces.bean.RequestScoped;
 import javax.inject.Named;
 
 /**
- *
  * @author Hasan
+ * Server: Apache TomEE 1.7.4
  */
 @Named
 @RequestScoped
