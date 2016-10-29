@@ -26,7 +26,7 @@
 
    <application>
       <resource-bundle>
-         <base-name>com.corejsf.messages</base-name>
+         <base-name>com.jsf.messages</base-name>
          <var>msgs</var>
       </resource-bundle>
    </application>
