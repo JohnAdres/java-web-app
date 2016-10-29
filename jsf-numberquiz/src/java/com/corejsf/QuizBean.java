@@ -18,7 +18,7 @@ public class QuizBean implements Serializable {
      public QuizBean() {
 
 //          problems.add(new ProblemBean(new int[]{3, 1, 4, 1, 5}, 9));//pi
-//          problems.add(new ProblemBean(new int[]{1, 1, 2, 3, 5}, 8));//fibonacci
+          problems.add(new ProblemBean(new int[]{1, 1, 2, 3, 5}, 8));//fibonacci
           problems.add(new ProblemBean(new int[]{1, 4, 9, 16, 25}, 36));//squares
 //         problems.add(new ProblemBean(new int[]{2, 3, 5, 7, 11}, 13));//primes
           problems.add(new ProblemBean(new int[]{1, 2, 4, 8, 16}, 32));//power of 2
@@ -34,7 +34,7 @@ public class QuizBean implements Serializable {
      }
 
      public ProblemBean getCurrent() {
-          if (index == 2) {
+          if (index == problems.size()-1) {
                setValid("result.xhtml");
           }
           return problems.get(currentIndex);

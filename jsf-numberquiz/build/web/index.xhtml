@@ -15,12 +15,19 @@
                     <f:param value="#{quizBean.score}"/>
                 </h:outputFormat>
             </p>
+            <h:outputScript rendered="#{quizBean.valid}">window.open('#{quizBean.url}',"_self")</h:outputScript>
+
             <p>#{msgs.guessNext}</p>
             <p>#{quizBean.current.sequence}</p>
             <p>
                 #{msgs.answer}
+
                 <h:inputText value="#{quizBean.answer}"/>
-                <h:outputScript rendered="#{quizBean.valid}">window.open('#{quizBean.url}',"_self")</h:outputScript>
+
+            </p>
+            <p>Previous Answer was 
+<!--            <h:outputText value="Correct" rendered="#{quizBean.valid}" />
+            <h:outputText value="Wrong" rendered="#{!quizBean.valid}" />-->
             </p>
             <p><h:commandButton value="#{msgs.next}"/></p>
         </h:form>
