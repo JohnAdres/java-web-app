@@ -15,14 +15,8 @@
                     <f:param value="#{quizBean.score}"/>
                 </h:outputFormat>
             </p>
-            <p>#{msgs.guessNext}</p>
-            <p>#{quizBean.current.sequence}</p>
-            <p>
-                #{msgs.answer}
-                <h:inputText value="#{quizBean.answer}"/>
-                <h:outputScript rendered="#{quizBean.valid}">window.open('#{quizBean.url}',"_self")</h:outputScript>
-            </p>
-            <p><h:commandButton value="#{msgs.next}"/></p>
+            <p>#{msgs.thanks}</p>
+           
         </h:form>
     </h:body>
 </html>

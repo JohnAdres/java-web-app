@@ -20,6 +20,7 @@
             <p>
                 #{msgs.answer}
                 <h:inputText value="#{quizBean.answer}"/>
+                <h:outputScript rendered="#{quizBean.valid}">window.open('#{quizBean.url}',"_self")</h:outputScript>
             </p>
             <p><h:commandButton value="#{msgs.next}"/></p>
         </h:form>
