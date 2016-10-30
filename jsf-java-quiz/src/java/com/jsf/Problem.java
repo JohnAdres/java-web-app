@@ -1,4 +1,3 @@
-
 package com.jsf;
 
 /**
@@ -7,28 +6,28 @@ package com.jsf;
  * @os windows 10
  * @date Oct 29, 2016
  */
-
 import java.io.Serializable;
 
-public class Problem
-implements Serializable {
-    private String question;
-    private String answer;
+public class Problem implements Serializable {
 
-    public Problem(String question, String answer) {
-        this.question = question;
-        this.answer = answer;
-    }
+     private final String question;
+     private final String answer;
 
-    public String getQuestion() {
-        return this.question;
-    }
+     public Problem(String question, String answer) {
+          this.question = question;
+          this.answer = answer;
+     }
 
-    public String getAnswer() {
-        return this.answer;
-    }
+     public String getQuestion() {
+          return question;
+     }
 
-    public boolean isCorrect(String response) {
-        return response.trim().equalsIgnoreCase(this.answer);
-    }
+     public String getAnswer() {
+          return answer;
+     }
+
+     // override for more sophisticated checking
+     public boolean isCorrect(String response) {
+          return response.trim().equalsIgnoreCase(answer);
+     }
 }
