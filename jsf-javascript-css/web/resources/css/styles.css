@@ -1,0 +1,9 @@
+#body-cl{
+    background: lightblue;
+}
+.evenColumns{
+    font-style: italic;
+}
+.oddColumns{
+    padding-left: 1em;
+}
