@@ -3,11 +3,11 @@ package com.jsf;
 import java.io.Serializable;
 import java.util.Map;
 import javax.enterprise.context.RequestScoped;
-import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.context.FacesContext;
+import javax.inject.Named;
 
-@ManagedBean(name = "navigationController", eager = true)
+@Named(value = "navigationController")
 @RequestScoped
 public class NavigationController implements Serializable {
 

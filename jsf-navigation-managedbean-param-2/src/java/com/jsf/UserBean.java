@@ -42,6 +42,4 @@ public class UserBean {
           return params.get("country");
 
      }
-
-     //getter and setter methods
 }

@@ -10,7 +10,9 @@
         <h:form>
             <h3>Using Managed Bean</h3>
             <h:commandButton action="#{navigationController.moveToPage1}" value="open" />
+            <h:commandLink value="press me" action="#{navigationController.moveToPage1}"></h:commandLink>
         </h:form>
+<h:link value="Contact Us" outcome="page1"/><!--unlike action outcome is evaluated before the page is rendered-->
     </h:body>
 </html>
 
