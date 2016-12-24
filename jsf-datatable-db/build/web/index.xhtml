@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:dataTable value="#{customerBean.all}" var ="customer">
+
+
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="id" style="font-weight: bold"/>
+                    </f:facet>
+
+                    #{customer.id}
+                </h:column>
+
+
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="First Name" style="font-weight: bold"/>
+                    </f:facet>
+                 
+                    #{customer.firstname}
+
+                </h:column>
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="Last Name" style="font-weight: bold"/>
+                    </f:facet>
+                    #{customer.lastname}
+
+                </h:column>
+
+
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="Language" style="font-weight: bold"/>
+                    </f:facet>
+                    #{customer.language}
+
+                </h:column>
+
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="Salary" style="font-weight: bold"/>
+                    </f:facet>
+                    #{customer.salary}
+
+                </h:column>
+            </h:dataTable>
+
+        </h:form>
+    </h:body>
+</html>
+
