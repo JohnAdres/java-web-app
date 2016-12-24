@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:dataTable value="#{tableData.names}" var ="name">
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="Edit" style="font-weight: bold"/>
+                    </f:facet>
+                    <h:selectBooleanCheckbox value="#{name.editable}" onclick="submit()"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="Last Name" style="font-weight: bold"/>
+                    </f:facet>
+
+                    <h:inputText value="#{name.last}" rendered="#{name.editable}" size="10"/>
+                    <h:outputText value="#{name.last}" rendered="#{not name.editable}"/>
+                </h:column>
+
+
+                <h:column>
+                    <f:facet name='header'>
+                        <h:outputText value="First Name" style="font-weight: bold"/>
+                    </f:facet>
+                    <h:inputText value="#{name.first}" rendered="#{name.editable}" size="10"/>
+                    <h:outputText value="#{name.first}" rendered="#{not name.editable}"/>
+                </h:column>
+                
+                <h:column>
+                    <h:commandLink value="Delete" action="#{tableData.deleteRow(name)}"/>
+                </h:column>
+            </h:dataTable>
+            <h:commandButton value ="save" action="#{tableData.save}"/>
+        </h:form>
+    </h:body>
+</html>
+
